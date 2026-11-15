@@ -1,0 +1,229 @@
+
+/* =================================
+   LENAH AUMA - PERSONAL PORTFOLIO
+   Main stylesheet
+================================= */
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #071b35, #16466b);
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d4af37;
+    margin-bottom: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+    color: #e4eaf0;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 16px 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-block;
+    color: #123d63;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 12px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c49a24;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* CONTENT SECTIONS */
+
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #d4af37;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    color: #123d63;
+    font-size: 24px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+section p {
+    font-size: 16px;
+}
+
+/* EDUCATION AND CERTIFICATIONS */
+
+.item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.item h3 {
+    color: #16466b;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item p {
+    color: #555555;
+}
+
+/* ONGOING LEARNING AND TECHNICAL DEVELOPMENT */
+
+.skills-list {
+    padding-left: 25px;
+}
+
+.skills-list li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+    color: #333333;
+}
+
+.skills-list li::marker {
+    color: #d4af37;
+}
+
+/* CONTACT SECTION */
+
+#contact a {
+    color: #16466b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #c49a24;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #071b35;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 5px 7px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    .item h3 {
+        font-size: 16px;
+    }
+
+    .skills-list li {
+        font-size: 15px;
+    }
+}
